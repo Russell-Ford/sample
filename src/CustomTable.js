@@ -41,7 +41,7 @@ export default class CustomTable extends React.Component {
     rtl = rtl == 'RTL' ? true : false;
     for(let i = start; i <= end; i += inc) {
       if(count == 5) {
-        rtl ? data.push(row) : data.push(row.reverse());
+        rtl ? data.push(row.reverse()) : data.push(row);
         row = [];
         count = 0;
         rtl = !rtl;
